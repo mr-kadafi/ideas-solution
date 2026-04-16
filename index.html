@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <link rel="icon" type="image/png" href="public/logo_ideas.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IDEAS SOLUTION | Innovative IT & Digital Solutions</title>
+    <meta name="description"
+        content="IDEAS SOLUTION provides custom system development, professional website design, software licensing, and IT maintenance. Empowering UMKMs and businesses with scalable digital transformation.">
+    <meta name="keywords"
+        content="IT solutions, custom system development, website development, software licensing, UMKM digital transformation, computer repair, IT maintenance, IDEAS SOLUTION">
+    <meta name="author" content="IDEAS SOLUTION">
+    <meta name="robots" content="index, follow">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0ea5e9', // Light Blue/Cyan (Innovation)
+                        secondary: '#1e3a8a', // Deep Blue (Trust & Security)
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-gray-50 overflow-x-hidden">
+
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center justify-center p-1.5 rounded-xl 
+transition-all duration-300 hover:scale-105">
+
+                    <img src="public/logo_ideas.png" alt="IDEAS SOLUTION Logo"
+                        class="h-12 md:h-14 lg:h-16 w-auto object-contain">
+                </div>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary font-medium transition">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary font-medium transition">About Us</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary font-medium transition">Services</a>
+                    <a href="#team" class="text-gray-700 hover:text-primary font-medium transition">Our Team</a>
+                </nav>
+
+                <div class="hidden md:flex">
+                    <a href="#contact"
+                        class="bg-secondary hover:bg-primary text-white px-6 py-2.5 rounded-full font-medium transition shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Partner
+                        With Us</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-primary font-medium">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-primary font-medium">About Us</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-primary font-medium">Services</a>
+                <a href="#team" class="block px-3 py-2 text-gray-700 hover:text-primary font-medium">Our Team</a>
+                <a href="#contact"
+                    class="block px-3 py-2 mt-4 bg-secondary text-white text-center rounded-lg font-medium">Partner With
+                    Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home"
+        class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-gradient-to-br from-dark via-secondary to-blue-900 text-white">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-primary opacity-20 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-teal-400 opacity-20 blur-3xl">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center fade-in-up">
+            <span
+                class="inline-block py-1 px-3 rounded-full bg-white/10 border border-white/20 text-sm font-semibold tracking-wider mb-6 text-primary-100">DRIVING
+                DIGITAL TRANSFORMATION</span>
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                Automate Tasks. Protect Data. <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-teal-300">Reduce Operational
+                    Costs.</span>
+            </h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10">
+                We empower UMKMs, businesses, and organizations with innovative IT solutions. Prioritizing simplicity
+                and adaptive innovation to scale your business for tomorrow.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#services"
+                    class="bg-primary hover:bg-blue-400 text-white px-8 py-3.5 rounded-full font-semibold text-lg transition shadow-lg hover:shadow-primary/50">Explore
+                    Services</a>
+                <a href="#about"
+                    class="bg-white/10 hover:bg-white/20 border border-white/30 text-white px-8 py-3.5 rounded-full font-semibold text-lg transition backdrop-blur-sm">Learn
+                    About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-in-up">
+                    <h2 class="text-primary font-semibold tracking-wide uppercase text-sm mb-2">Company Profile</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Your Strategic Partner in the Digital
+                        Era</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        IDEAS SOLUTION is an Information Technology (IT) company focused on delivering innovative and
+                        integrated digital solutions. We assist individuals, businesses, and organizations in optimizing
+                        technology to improve operational efficiency and competitiveness.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        By prioritizing professionalism, quality, and customer satisfaction, we build long-term
+                        trust—especially with UMKMs transitioning into the digital space.
+                    </p>
+                </div>
+
+                <div class="grid gap-6 fade-in-up" style="transition-delay: 200ms;">
+                    <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <div
+                            class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-secondary mb-4">
+                            <i class="fas fa-eye text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Our Vision</h4>
+                        <p class="text-gray-600">To become a trusted IT company that delivers innovative digital
+                            solutions and drives digital transformation across various sectors.</p>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <div
+                            class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-secondary mb-4">
+                            <i class="fas fa-bullseye text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Our Mission</h4>
+                        <ul class="text-gray-600 space-y-2 list-none">
+                            <li><i class="fas fa-check text-primary mr-2"></i> Provide high-quality, innovative IT
+                                tailored services.</li>
+                            <li><i class="fas fa-check text-primary mr-2"></i> Improve efficiency & productivity via
+                                effective solutions.</li>
+                            <li><i class="fas fa-check text-primary mr-2"></i> Deliver professional services with a
+                                focus on trust.</li>
+                            <li><i class="fas fa-check text-primary mr-2"></i> Develop a competent, creative, adaptive
+                                team.</li>
+                            <li><i class="fas fa-check text-primary mr-2"></i> Build long-term partnerships with
+                                clients.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-primary font-semibold tracking-wide uppercase text-sm mb-2 fade-in-up">Core Services</h2>
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 fade-in-up">Solutions Tailored to Your Needs
+            </h3>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-16 fade-in-up">From branding to infrastructure, our
+                comprehensive suite of IT services is designed to elevate your operational capabilities.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 text-left fade-in-up">
+                    <div
+                        class="w-14 h-14 bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center text-white mb-6 shadow-md">
+                        <i class="fas fa-code text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Custom System Development</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Bespoke software tailored perfectly to your client
+                        and business needs to streamline workflows.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 text-left fade-in-up"
+                    style="transition-delay: 100ms;">
+                    <div
+                        class="w-14 h-14 bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center text-white mb-6 shadow-md">
+                        <i class="fas fa-laptop-code text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Web Development</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Professional website development focused on UI/UX,
+                        responsive design, and strong digital branding.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 text-left fade-in-up"
+                    style="transition-delay: 200ms;">
+                    <div
+                        class="w-14 h-14 bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center text-white mb-6 shadow-md">
+                        <i class="fab fa-windows text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Software Licensing</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Official provision of licensed software, including
+                        Windows OS and Microsoft Office suites.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 text-left fade-in-up"
+                    style="transition-delay: 300ms;">
+                    <div
+                        class="w-14 h-14 bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center text-white mb-6 shadow-md">
+                        <i class="fas fa-tools text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">IT Maintenance</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Reliable computer and laptop maintenance, repair
+                        services, and data protection strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-secondary text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 20px 20px;"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 fade-in-up">
+                    <h2 class="text-primary font-semibold tracking-wide uppercase text-sm mb-2">Why Choose IDEAS
+                        SOLUTION</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-6">Empowering UMKMs & Enterprises Alike</h3>
+                    <p class="text-gray-300 mb-8 leading-relaxed">
+                        Our core value prioritizes simplicity and empowerment. We build long-term trust with businesses
+                        going digital. Combined with adaptive innovation, we ensure our IT solutions are accessible
+                        today and scalable for tomorrow.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-center gap-3"><i class="fas fa-star text-primary"></i> <span>Professional
+                                Team</span></div>
+                        <div class="flex items-center gap-3"><i class="fas fa-shield-alt text-primary"></i>
+                            <span>High-Quality & Reliable</span>
+                        </div>
+                        <div class="flex items-center gap-3"><i class="fas fa-tags text-primary"></i> <span>Affordable
+                                Pricing</span></div>
+                        <div class="flex items-center gap-3"><i class="fas fa-heart text-primary"></i>
+                            <span>Customer-Focused</span>
+                        </div>
+                        <div class="flex items-center gap-3"><i class="fas fa-clock text-primary"></i> <span>On-Time
+                                Delivery</span></div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 w-full fade-in-up" style="transition-delay: 200ms;">
+                    <div class="glass-card p-2 rounded-2xl shadow-2xl">
+                        <div
+                            class="bg-dark rounded-xl h-64 md:h-80 flex items-center justify-center relative overflow-hidden">
+                            <div class="absolute top-4 left-4 flex gap-2">
+                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            </div>
+                            <div class="text-center">
+                                <i class="fas fa-chart-line text-6xl text-primary mb-4 opacity-80"></i>
+                                <h4 class="text-xl font-semibold text-gray-300">Scalable IT Infrastructure</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-24 bg-gray-50 relative overflow-hidden">
+        <!-- Background Accent -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/10 blur-3xl rounded-full">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-primary font-semibold tracking-widest uppercase text-sm mb-3 fade-in-up">
+                Our Team
+            </h2>
+            <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 fade-in-up">
+                Meet The Professionals
+            </h3>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-20 fade-in-up">
+                A strong team of experts dedicated to delivering innovative and reliable IT solutions.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+
+                <!-- CARD -->
+                <div class="group fade-in-up">
+                    <div
+                        class="relative rounded-3xl overflow-hidden bg-white border border-gray-100 shadow-sm hover:shadow-2xl transition duration-500">
+
+                        <!-- Image -->
+                        <div class="overflow-hidden">
+                            <img src="public/mrkadafi.jpeg"
+                                class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-6 text-left">
+                            <h4 class="text-lg font-semibold text-gray-900">Mu'ammar Kadafi</h4>
+                            <p class="text-primary text-sm mb-3">Project Manager</p>
+
+                            <!-- Divider -->
+                            <div class="h-1 bg-primary rounded-full mb-4 
+                                w-12 group-hover:w-52 
+                                transition-all duration-500 ease-out 
+                                origin-left">
+                            </div>
+                            <!-- Social -->
+                            <div class="flex gap-3 transition duration-300">
+
+                                <!-- LinkedIn -->
+                                <a href="https://www.linkedin.com/in/muammar-kadafi/" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-primary hover:text-white transition">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                </a>
+
+                                <!-- Instagram -->
+                                <a href="https://www.instagram.com/mrkadafii/" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gradient-to-tr hover:from-pink-500 hover:via-red-500 hover:to-yellow-500 hover:text-white">
+                                    <i class="fab fa-instagram text-sm"></i>
+                                </a>
+
+                                <!-- WhatsApp -->
+                                <a href="https://wa.me/6282321233864" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-green-500 hover:text-white transition">
+                                    <i class="fab fa-whatsapp text-sm"></i>
+                                </a>
+
+                                <!-- GitHub -->
+                                <a href="https://github.com" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-900 hover:text-white transition">
+                                    <i class="fab fa-github text-sm"></i>
+                                </a>
+
+                                <!-- YouTube -->
+                                <a href="https://www.youtube.com/@muammarkadafi1846" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-red-500 hover:text-white transition">
+                                    <i class="fab fa-youtube text-sm"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <!-- Glow Effect -->
+                        <div
+                            class="absolute inset-0 rounded-3xl border border-transparent group-hover:border-primary/40 transition pointer-events-none">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COPY CARD -->
+                <div class="group fade-in-up" style="transition-delay: 100ms;">
+                    <div
+                        class="relative rounded-3xl overflow-hidden bg-white border border-gray-100 shadow-sm hover:shadow-2xl transition duration-500">
+                        <div class="overflow-hidden">
+                            <img src="public/eka.jpeg"
+                                class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                        </div>
+                        <div class="p-6 text-left">
+                            <h4 class="text-lg font-semibold text-gray-900">Eka Sari Praditya</h4>
+                            <p class="text-primary text-sm mb-3">System Developer</p>
+                            <div class="h-1 bg-primary rounded-full mb-4 
+                                w-12 group-hover:w-52 
+                                transition-all duration-500 ease-out 
+                                origin-left">
+                            </div>
+                            <div class="flex gap-3 transition duration-300">
+
+                                <!-- LinkedIn -->
+                                <a href="https://www.linkedin.com/in/eka-sari-praditya-2792b727a/" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-primary hover:text-white transition">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                </a>
+
+                                <!-- Instagram -->
+                                <a href="https://www.instagram.com/kprdtyy/" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gradient-to-tr hover:from-pink-500 hover:via-red-500 hover:to-yellow-500 hover:text-white">
+                                    <i class="fab fa-instagram text-sm"></i>
+                                </a>
+
+                                <!-- WhatsApp -->
+                                <a href="https://wa.me/6280012345678" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-green-500 hover:text-white transition">
+                                    <i class="fab fa-whatsapp text-sm"></i>
+                                </a>
+
+                                <!-- GitHub -->
+                                <a href="https://github.com" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-900 hover:text-white transition">
+                                    <i class="fab fa-github text-sm"></i>
+                                </a>
+
+                                <!-- YouTube -->
+                                <a href="https://youtube.com" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-red-500 hover:text-white transition">
+                                    <i class="fab fa-youtube text-sm"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div
+                            class="absolute inset-0 rounded-3xl border border-transparent group-hover:border-primary/40 transition pointer-events-none">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group fade-in-up" style="transition-delay: 200ms;">
+                    <div
+                        class="relative rounded-3xl overflow-hidden bg-white border border-gray-100 shadow-sm hover:shadow-2xl transition duration-500">
+                        <div class="overflow-hidden">
+                            <img src="public/angga.png"
+                                class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                        </div>
+                        <div class="p-6 text-left">
+                            <h4 class="text-lg font-semibold text-gray-900">Angga Qamaruzzaman</h4>
+                            <p class="text-primary text-sm mb-3">Web Developer</p>
+                            <div class="h-1 bg-primary rounded-full mb-4 
+                                w-12 group-hover:w-52 
+                                transition-all duration-500 ease-out 
+                                origin-left">
+                            </div>
+                            <div class="flex gap-3 transition duration-300">
+
+                                <!-- LinkedIn -->
+                                <a href="https://www.linkedin.com/in/angga-qomaruzzaman/" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-primary hover:text-white transition">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                </a>
+
+                                <!-- Instagram -->
+                                <a href="https://www.instagram.com/anggaqomaruzzaman65/" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gradient-to-tr hover:from-pink-500 hover:via-red-500 hover:to-yellow-500 hover:text-white">
+                                    <i class="fab fa-instagram text-sm"></i>
+                                </a>
+
+                                <!-- WhatsApp -->
+                                <a href="https://wa.me/6288973629332" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-green-500 hover:text-white transition">
+                                    <i class="fab fa-whatsapp text-sm"></i>
+                                </a>
+
+                                <!-- GitHub -->
+                                <a href="https://ziqax.github.io/Portofolio-Angga-Qomaruzzaman/" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-900 hover:text-white transition">
+                                    <i class="fab fa-github text-sm"></i>
+                                </a>
+
+                                <!-- YouTube -->
+                                <a href="https://www.youtube.com/@anggaqomaruzzaman24" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-red-500 hover:text-white transition">
+                                    <i class="fab fa-youtube text-sm"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div
+                            class="absolute inset-0 rounded-3xl border border-transparent group-hover:border-primary/40 transition pointer-events-none">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group fade-in-up" style="transition-delay: 300ms;">
+                    <div
+                        class="relative rounded-3xl overflow-hidden bg-white border border-gray-100 shadow-sm hover:shadow-2xl transition duration-500">
+                        <div class="overflow-hidden">
+                            <img src="public/idan.jpeg"
+                                class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                        </div>
+                        <div class="p-6 text-left">
+                            <h4 class="text-lg font-semibold text-gray-900">Idan</h4>
+                            <p class="text-primary text-sm mb-3">Marketing & Client Relations</p>
+                            <div class="h-1 bg-primary rounded-full mb-4 
+                                w-12 group-hover:w-52 
+                                transition-all duration-500 ease-out 
+                                origin-left">
+                            </div>
+                            <div class="flex gap-3 transition duration-300">
+
+                                <!-- LinkedIn -->
+                                <a href="https://linkedin.com" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-primary hover:text-white transition">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                </a>
+
+                                <!-- Instagram -->
+                                <a href="https://www.instagram.com/idan_sann" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gradient-to-tr hover:from-pink-500 hover:via-red-500 hover:to-yellow-500 hover:text-white">
+                                    <i class="fab fa-instagram text-sm"></i>
+                                </a>
+
+                                <!-- WhatsApp -->
+                                <a href="https://wa.me/6281282845241" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-green-500 hover:text-white transition">
+                                    <i class="fab fa-whatsapp text-sm"></i>
+                                </a>
+
+                                <!-- GitHub -->
+                                <a href="https://github.com" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-900 hover:text-white transition">
+                                    <i class="fab fa-github text-sm"></i>
+                                </a>
+
+                                <!-- YouTube -->
+                                <a href="https://www.youtube.com/@idansan4771" target="_blank"
+                                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-red-500 hover:text-white transition">
+                                    <i class="fab fa-youtube text-sm"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div
+                            class="absolute inset-0 rounded-3xl border border-transparent group-hover:border-primary/40 transition pointer-events-none">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-dark pt-16 pb-8 border-t border-gray-800">
+
+        <footer class="bg-dark pt-16 pb-8 border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+
+                    <div class="col-span-1 lg:col-span-2">
+                        <div
+                            class="inline-flex items-center justify-center p-2 rounded-xl bg-white mb-6 shadow-lg shadow-primary/10 border border-primary/20 transition-transform hover:scale-105 duration-300">
+                            <img src="public/logo_ideas.png" alt="IDEAS SOLUTION Logo"
+                                class="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain">
+                        </div>
+                        <p class="text-gray-400 mb-6 max-w-md">
+                            The right partner to help your business grow in the digital era. Automating tasks,
+                            protecting
+                            data, and reducing costs through adaptive innovation.
+                        </p>
+                        <div class="flex space-x-4">
+                            <!-- LinkedIn -->
+                            <a href="#team"
+                                class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-primary hover:text-white transition">
+                                <i class="fab fa-linkedin-in text-sm"></i>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a href="#team"
+                                class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gradient-to-tr hover:from-pink-500 hover:via-red-500 hover:to-yellow-500 hover:text-white">
+                                <i class="fab fa-instagram text-sm"></i>
+                            </a>
+
+                            <!-- WhatsApp -->
+                            <a href="#team"
+                                class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-green-500 hover:text-white transition">
+                                <i class="fab fa-whatsapp text-sm"></i>
+                            </a>
+
+                            <!-- GitHub -->
+                            <a href="#team"
+                                class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-900 hover:text-white transition">
+                                <i class="fab fa-github text-sm"></i>
+                            </a>
+
+                            <!-- YouTube -->
+                            <a href="#team"
+                                class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-red-500 hover:text-white transition">
+                                <i class="fab fa-youtube text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-white font-semibold mb-6">Quick Links</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#home" class="text-gray-400 hover:text-primary transition">Home</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-primary transition">About Us</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-primary transition">Services</a>
+                            </li>
+                            <li><a href="#team" class="text-gray-400 hover:text-primary transition">Our Team</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-white font-semibold mb-6">Contact Us</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3 text-gray-400">
+                                <i class="fas fa-envelope mt-1 text-primary"></i>
+                                <span>IT@ideassolution.com</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-gray-400">
+                                <i class="fas fa-phone mt-1 text-primary"></i>
+                                <span>+62 800 1234 5678</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-gray-400">
+                                <i class="fas fa-map-marker-alt mt-1 text-primary"></i>
+                                <span>Bekasi, Indonesia</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-500 text-sm">© 2026 IDEAS SOLUTION. All rights reserved.</p>
+                    <div class="flex gap-4 text-sm text-gray-500">
+                        <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                        <a href="#" class="hover:text-white transition">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            // Mobile Menu Toggle
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu on click
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+
+            // Navbar Scroll Effect
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    navbar.classList.add('shadow-md');
+                    navbar.classList.remove('py-2');
+                } else {
+                    navbar.classList.remove('shadow-md');
+                    navbar.classList.add('py-2');
+                }
+            });
+
+            // Scroll Animations using Intersection Observer
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in-up').forEach((el) => {
+                observer.observe(el);
+            });
+        </script>
+</body>
+
+</html>
